@@ -1,0 +1,50 @@
+#!/system/xbin/bash
+#janganDiRecodeGuys!!
+#HargaiAuthor
+#capeklohBuatnya
+#gampangKokBuatnya
+clear
+blue='\033[34;1m'
+green='\033[32;1m'
+purple='\033[35;1m'
+cyan='\033[36;1m'
+red='\033[31;1m'
+white='\033[37;1m'
+yellow='\033[33;1m'
+sleep 2
+clear
+cowsay -f kiss.cow AssalamuAlaikum Warahmatullahi Wabarakatuh Akhy Dan Ukhty | lolcat
+echo $red "[~]=====================================[~]"
+echo $cyan "     >>>Berdo'a Dulu Ya BossKu!1!1!<<<     "
+echo $red "[~]=====================================[~]"
+echo $yellow ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo $cyan " Author"$purple ":"$green "Muhammad"$cyan "Abdillah"
+echo $yellow ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo $red "Ketik" $yellow "  Y  " $red "Untuk MengInstall" $yellow "  T  " $red "Untuk Tidak MengInstall"
+echo ""
+echo $white "╭────["$cyan "Metasploit"$yellow "-"$cyan "Framework"$white ":~]"
+read -p " ╰────➲ " pilihan
+
+if [ $pilihan = Y ] || [ $pilihan = y ]
+then
+apt install python python2
+apt install git
+apt install wget
+pkg install curl
+curl -LO https://raw.githubusercontent.com/Hax4us/Metasploit_termux/master/metasploit.sh
+chmod +x metasploit.sh
+./metasploit.sh
+mv metasploit-framework $HOME
+cd $HOME/metasploit-framework
+./msfconsole
+fi
+
+if [ $pilihan = T ] || [ $pilihan = t ]
+then
+figlet -f future Salam Hacker | lolcat
+echo $green "Meretas Itu seperti Sulap"
+echo $yellow "Belajar Dari Kesalahan"
+echo $cyan "Thank's To Mr.Ism1"
+figlet -f slant Sampai | lolcat
+figlet -f slant Jumpa | lolcat
+fi
